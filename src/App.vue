@@ -77,6 +77,7 @@ const searchByText = (searchText: string) => {
     },
     results => {
       if (!results?.[0].place_id) {
+        alert("No search result")
         return
       }
       updateDetailsByPlaceId(results[0].place_id)
