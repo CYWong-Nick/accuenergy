@@ -83,7 +83,7 @@ const formatDate = (date: Date, offsetHours: number) => {
             <div>Page {{ currentPage }} of {{ maxPage }}</div>
             <div><button v-on:click="toNextPage">Next page</button></div>
         </div>
-        <button class="delete-selected-btn" v-on:click="onRemoveSelected">Delete Selected</button>
+        <button class="delete-selected-btn" v-on:click="onRemoveSelected" :disabled="searchHistory.every(e => !e.checked)">Delete Selected</button>
     </div>
 </template>
 
