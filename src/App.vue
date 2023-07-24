@@ -109,8 +109,7 @@ const getMyLocation = () => {
 
 <template>
   <main>
-    <SearchBar class="search-bar" :on-search="searchByText" :on-search-place-id="updateDetailsByPlaceId"
-      :on-get-current-location="getMyLocation" />
+    <SearchBar class="search-bar" :on-search="searchByText" :on-get-current-location="getMyLocation" />
     <div id="map" ref="mapElement"></div>
     <SearchHistoryTable :search-history="searchHistory" :on-remove="handleRemove" :on-remove-selected="handleRemoveSelected" />
   </main>
