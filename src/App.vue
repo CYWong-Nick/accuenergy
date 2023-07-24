@@ -136,21 +136,4 @@ main {
   width: 100%;
   height: 500px;
 }
-
-table {
-  width: 100%;
-}
-
-table,
-th,
-td {
-  border: 1px solid black;
-  border-collapse: collapse;
-  padding: 10px;
-}
-
-svg {
-  height: 16px;
-  width: 16px;
-}
 </style>
